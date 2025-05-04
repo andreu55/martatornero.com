@@ -1,0 +1,33 @@
+title: Marta Tornero
+description: Escritora, investigadora y comunicadora sobre colapso, comunidad y cuidado. 
+url: "https://martatornero.com"  # sin / al final
+baseurl: "" # déjalo vacío si está en el root del dominio
+locale: es_ES
+timezone: Europe/Madrid # Si descomentamos esto hay que activar gem 'tzinfo-data'
+lang: es
+
+favicon: 'assets/favicon.ico'
+
+author:
+  name: "Marta Tornero"
+  email: "permaprendices@gmail.com"
+  url: "https://martatornero.com"
+email: "permaprendices@gmail.com"
+
+social:
+  name: Marta Tornero
+  links:
+    - https://instagram.com/martatornero
+    - https://permaprendices.substack.com
+
+twitter:
+  username: martatornero
+
+feed:
+  path: feed.xml
+  excerpt_only: true
+
+plugins:
+    - jekyll-seo-tag
+    - jekyll-sitemap
+    - jekyll-feed

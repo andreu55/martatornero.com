@@ -1,0 +1,52 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.locale | default: site.locale }}">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/{{ site.favicon }}">
+    {% feed_meta %}
+    {% seo %}
+</head>
+<body class="has-grid">
+	<button class="menu-toggle" aria-label="Menú">☰</button>
+	<header class="sidebar">
+		<div class="container">
+			<nav class="site-nav" id="menu">
+			<ul>
+				<li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+				<li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+				<li><a href="{{ '/sobre-mi/' | relative_url }}">Sobre mí</a></li>
+				<li><a href="{{ '/contacto/' | relative_url }}">Contacto</a></li>
+				<li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
+				<li><a href="https://ejemplo.com" target="_blank" rel="noopener noreferrer">Externo</a></li>
+			</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main-content"> <!-- Contenedor para el contenido principal -->
+		{{ content }}
+	</main>
+
+	<footer class="page-footer"> <!-- Añadimos una clase para distinguirlo si es necesario -->
+		{% include footer.html %}
+	</footer>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const toggle = document.querySelector('.menu-toggle');
+			const menu = document.querySelector('.site-nav');
+			toggle.addEventListener('click', () => {
+				menu.classList.toggle('active');
+			});
+		});
+	</script>
+
+	
+
+</body>
+</html>

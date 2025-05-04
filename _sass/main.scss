@@ -1,0 +1,278 @@
+// Estructura del Layout con Grid
+body {
+    // Mueve el padding aquí si quieres espacio alrededor de todo
+    padding: 1rem;
+    margin: 0; // Asegura que no haya márgenes por defecto en body
+    display: grid;
+    // Definición de las columnas:
+    // 1fr: Espacio flexible a la izquierda (para centrar)
+    // minmax(auto, $sidebar-width): Columna para la barra lateral, con ancho máximo definido
+    // minmax(auto, $content-max-width): Columna para el contenido, con ancho máximo definido
+    // 1fr: Espacio flexible a la derecha (para centrar)
+    grid-template-columns: 1fr minmax(auto, $sidebar-width) minmax(auto, $content-max-width) 1fr;
+    gap: $gap-width; // Espacio entre las columnas definidas (sidebar y content)
+    min-height: 100vh; // Asegura que el body ocupe al menos toda la altura de la ventana
+}
+
+.sidebar {
+	margin-top: 2em;
+    grid-column: 2 / 3; // Coloca la barra lateral en la segunda columna del grid
+    // Estilos opcionales para la barra lateral:
+    // border-right: $border;
+    padding-right: calc($gap-width / 2); // Ajustado para usar calc
+}
+
+// .sidebar h3 { // Estilo para los títulos en la barra lateral
+//     margin-top: 0; // Quita el margen superior del primer título si lo deseas
+// }
+
+.sidebar ul {
+    list-style-type: none; // Quita los puntitos de las listas
+}
+
+.sidebar ul li {
+    padding: 0.5em; // Espacio entre elementos de la lista
+}
+
+.main-content {
+    grid-column: 3 / 4; // Coloca el contenido principal en la tercera columna del grid
+    max-width: 100%; // Asegura que el contenido no exceda el ancho de su columna de grid
+}
+
+// General
+html {
+	color: $primary;
+	font-family: "Montserrat", sans-serif;
+	line-height: 1.5;
+	// max-width: 80ch;
+	// padding: 16px;
+}
+:is(h2, h3, h4, h5, h6) {
+	margin-top: 1em;
+}
+
+// Footer
+.page-footer {
+	grid-column: 2 / 4;
+	margin: 2em auto; // Ajusta el margen si 'auto' ya no funciona como esperas
+}
+.page-footer ul {
+	align-items: left;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.page-footer ul li {
+	margin-left: 0;
+}
+.page-footer nav ul {
+	justify-content: space-between;
+}
+.next {
+	margin-left: auto;
+}
+.page-footer hr {
+	margin: 1.5rem 0;
+}
+
+// Images
+img {
+	max-width: 100%;
+	// max-height: calc(0.6 * 80ch);
+	max-height: calc(0.6 * #{$content-max-width}); // Usa la variable SCSS aquí si es posible
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5em;
+	margin: auto;
+}
+
+figure figcaption {
+	max-width: 80%;
+	font-size: 95%;
+}
+
+// Lists
+:is(ul, ol) {
+	font-variant-numeric: tabular-nums;
+	padding-left: 1rem;
+}
+dt {
+	font-weight: bold;
+}
+:is(ul, ol) li,
+dd {
+	margin-left: $indentation;
+}
+.posts-list {
+	padding-top: 1em;
+}
+
+// Blockquotes
+blockquote {
+	border-left: $border;
+	font-style: italic;
+	margin-left: 0;
+	padding-left: $indentation;
+}
+
+// Tables
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+:is(table, th, td) {
+	border: $border;
+}
+:is(th, td) {
+	padding: 0.25rem 0.5rem; // 4px 8px;
+}
+
+// Horizontal rules
+hr {
+	border-bottom: 1px;
+	color: $primary;
+	margin: 0;
+}
+
+// Footnotes
+.footnotes {
+	margin-top: 2em;
+}
+.footnotes ol li::marker {
+	font-variant-position: super;
+}
+
+.site-nav {
+    display: block;
+    gap: 1rem;
+}
+
+.menu-toggle {
+    display: none;
+} 
+
+// --- Media Query para pantallas pequeñas (móviles) ---
+@media (max-width: 768px) { // Ajusta 768px si necesitas otro breakpoint
+
+    body {
+        display: block;
+        padding: 0.5rem; // Puedes reducir el padding general
+    }
+    
+    .menu-toggle {
+        display: block;
+        padding: 0.7rem 1rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        z-index: 1001;
+    }
+    
+    .site-nav {
+        display: none;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        right: 0;
+        width: 100%;
+        // height: 100%;
+        background: #fff;
+        padding: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        z-index: 1000;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .site-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .site-nav li a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+    
+    .site-nav.active {
+        display: block;
+    }
+
+    .page-footer { // O usa 'footer'
+        // grid-column: 2 / 3; // Ocupa la columna central
+        width: 100%;
+    }
+
+    .main-content {
+		// margin-top: 0.5rem;
+        // grid-column: 2 / 3; // Como la sidebar desaparece, el main-content ahora ocupa la segunda columna en nuestra nueva definición de grid móvil.
+        width: 100%;
+    }
+
+    img {
+        max-height: none; // Quizás quitar la restricción de altura en móvil
+    }
+
+} // --- Fin de la Media Query para moviles ---
+
+// --- Acordeon ---
+.acordeon-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .acordeon-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+  }
+  
+  .acordeon-question {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .acordeon-question::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .acordeon-question[aria-expanded="true"]::after {
+    content: "−";
+  }
+  
+  .acordeon-answer {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    padding-left: 1rem;
+  }
+  
+  .acordeon-answer p {
+    margin: 0.5rem 0 1rem;
+  }
+  

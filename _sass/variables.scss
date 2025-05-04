@@ -1,0 +1,11 @@
+// Colors
+$primary: #222;
+$base-font-size: 16px; // Útil para cálculos si quieres ser explícito
+
+// Typography
+$indentation: 1.25rem; // 20px / 16px
+$sidebar-width: 12.5rem; // Ancho deseado para la barra lateral
+$content-max-width: 80ch; // Máximo ancho para el contenido (como tenías)
+$gap-width: 2rem; // Espacio entre columnas
+
+$border: 1px solid $primary;

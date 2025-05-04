@@ -1,0 +1,23 @@
+<nav>
+	<ul>
+		{% if page.previous.url %}
+		<li class="prev">
+			<a href="{{ page.previous.url | relative_url }}"
+				>❮ <span>{{page.previous.title | truncate: 32}}</span>
+			</a>
+		</li>
+		{% endif %} {% if page.next.url %}
+		<li class="next">
+			<a href="{{ page.next.url | relative_url }}"
+				><span>{{page.next.title | truncate: 32}}</span> ❯
+			</a>
+		</li>
+		{% endif %}
+	</ul>
+</nav>
+<hr />
+<ul>
+	<li>© {{ 'now' | date: "%Y" }} {{ site.title }}</li>
+	<li>🏷️ <a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+	<li>🍃 Made by <a href="https://permaprendices.com/" target="_blank">Permaprendices</a> with 💚</li>
+</ul>
