@@ -27,6 +27,20 @@ feed:
   path: feed.xml
   excerpt_only: true
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: "es"
+  - scope:
+      path: "es" # Si está en la carpeta es/
+    values:
+      lang: "es" # Suponemos que el lang es "es"
+  - scope:
+      path: "en" # Si está en la carpeta en/
+    values:
+      lang: "en" # Suponemos que el lang es "en"
+
 plugins:
     - jekyll-seo-tag
     - jekyll-sitemap

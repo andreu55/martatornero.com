@@ -1,7 +1,11 @@
 {
     "[markdown]": {
         "editor.wordWrap": "on",             // Ajuste automático de línea
-        "editor.quickSuggestions": true,     // Sugerencias rápidas (autocompletado)
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        },     // Sugerencias rápidas (autocompletado)
         "editor.formatOnSave": true,         // Formatear automáticamente al guardar
         "editor.tabSize": 2,                 // Tamaño de tabulación más pequeño (común en Markdown)
         "editor.insertSpaces": true,         // Usar espacios en lugar de tabs

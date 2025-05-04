@@ -22,6 +22,19 @@
 				<li><a href="{{ '/sobre-mi/' | relative_url }}">Sobre mí</a></li>
 				<li><a href="{{ '/contacto/' | relative_url }}">Contacto</a></li>
 				<li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
+
+				{% if page.altlang %}
+				<li class="solo-movil">
+				<a href="{{ page.altlang | relative_url }}">
+					{% if page.locale == 'en' %}
+						🇪🇸 Español
+					{% else if page.locale == 'es' %}
+						🇬🇧 English
+					{% endif %}
+				</a>
+				</li>
+				{% endif %}
+
 				<li><a href="https://ejemplo.com" target="_blank" rel="noopener noreferrer">Externo</a></li>
 			</ul>
 			</nav>
@@ -29,6 +42,19 @@
 	</header>
 
 	<main class="main-content"> <!-- Contenedor para el contenido principal -->
+		
+		{% if page.altlang %}
+			<div class="language-switcher">
+				<a href="{{ page.altlang | relative_url }}">
+					{% if page.locale == 'en' %}
+						🇪🇸 Español
+					{% else if page.locale == 'es' %}
+						🇬🇧 English
+					{% endif %}
+				</a>
+			</div>
+		{% endif %}
+
 		{{ content }}
 	</main>
 
