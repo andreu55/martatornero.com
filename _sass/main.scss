@@ -67,7 +67,6 @@ html {
 	margin: 2em auto; // Ajusta el margen si 'auto' ya no funciona como esperas
 }
 .page-footer ul {
-	align-items: left;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1em;
@@ -224,6 +223,12 @@ hr {
     .page-footer { // O usa 'footer'
         // grid-column: 2 / 3; // Ocupa la columna central
         width: 100%;
+    }
+
+    .page-footer ul {
+        text-align: center; 
+        flex-direction: column;
+        align-content: center;
     }
 
     .main-content {
