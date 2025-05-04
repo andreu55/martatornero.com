@@ -17,25 +17,25 @@
 		<div class="container">
 			<nav class="site-nav" id="menu">
 			<ul>
-				<li><a href="{{ '/' | relative_url }}">Inicio</a></li>
-				<li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-				<li><a href="{{ '/sobre-mi/' | relative_url }}">Sobre mí</a></li>
-				<li><a href="{{ '/contacto/' | relative_url }}">Contacto</a></li>
-				<li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
+				{% if page.locale == 'en' %}
+					<li><a href="{{ '/en/' | relative_url }}">Home</a></li>
+					<li><a href="{{ '/about/' | relative_url }}">About</a></li>
+					<li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+					<li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
+				{% else %}
+					<li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+					<li><a href="{{ '/sobre-mi/' | relative_url }}">Sobre mí</a></li>
+					<li><a href="{{ '/contacto/' | relative_url }}">Contacto</a></li>
+					<li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
+				{% endif %}
 
 				{% if page.altlang %}
 				<li class="solo-movil">
-				<a href="{{ page.altlang | relative_url }}">
-					{% if page.locale == 'en' %}
-						🇪🇸 Español
-					{% else if page.locale == 'es' %}
-						🇬🇧 English
-					{% endif %}
-				</a>
+					{% include link-idioma.html %}
 				</li>
 				{% endif %}
 
-				<li><a href="https://ejemplo.com" target="_blank" rel="noopener noreferrer">Externo</a></li>
+				<li><a href="https://ejemplo.com" target="_blank" rel="noopener noreferrer">Externo ↗🔗❐🔖</a></li>
 			</ul>
 			</nav>
 		</div>
@@ -45,13 +45,7 @@
 		
 		{% if page.altlang %}
 			<div class="language-switcher">
-				<a href="{{ page.altlang | relative_url }}">
-					{% if page.locale == 'en' %}
-						🇪🇸 Español
-					{% else if page.locale == 'es' %}
-						🇬🇧 English
-					{% endif %}
-				</a>
+				{% include link-idioma.html %}
 			</div>
 		{% endif %}
 
