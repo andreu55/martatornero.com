@@ -1,14 +1,20 @@
 // 3
+html {
+	color: $primary;
+	font-family: "Montserrat", sans-serif;
+	line-height: 1.5;
+    scroll-behavior: smooth;
+	// max-width: 80ch;
+	// padding: 16px;
+}
+:is(h2, h3, h4, h5, h6) {
+	margin-top: 1em;
+}
+
 body {
-    // Mueve el padding aquí si quieres espacio alrededor de todo
     padding: 1rem;
     margin: 0; // Asegura que no haya márgenes por defecto en body
     display: grid;
-    // Definición de las columnas:
-    // 1fr: Espacio flexible a la izquierda (para centrar)
-    // minmax(auto, $sidebar-width): Columna para la barra lateral, con ancho máximo definido
-    // minmax(auto, $content-max-width): Columna para el contenido, con ancho máximo definido
-    // 1fr: Espacio flexible a la derecha (para centrar)
     grid-template-columns: 1fr minmax(auto, $sidebar-width) minmax(auto, $content-max-width) 1fr;
     gap: $gap-width; // Espacio entre las columnas definidas (sidebar y content)
     min-height: 100vh; // Asegura que el body ocupe al menos toda la altura de la ventana
@@ -25,7 +31,7 @@ a:hover {
 }
 
 .sidebar {
-	margin-top: 2em;
+    margin-top: 2em;
     grid-column: 2 / 3; // Coloca la barra lateral en la segunda columna del grid
     // Estilos opcionales para la barra lateral:
     // border-right: $border;
@@ -47,18 +53,6 @@ a:hover {
 .main-content {
     grid-column: 3 / 4; // Coloca el contenido principal en la tercera columna del grid
     max-width: 100%; // Asegura que el contenido no exceda el ancho de su columna de grid
-}
-
-// General
-html {
-	color: $primary;
-	font-family: "Montserrat", sans-serif;
-	line-height: 1.5;
-	// max-width: 80ch;
-	// padding: 16px;
-}
-:is(h2, h3, h4, h5, h6) {
-	margin-top: 1em;
 }
 
 // Footer
