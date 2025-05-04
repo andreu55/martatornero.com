@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Bienvenido
+# title: Bienvenido
 locale: es
 # permalink: /
 altlang: /en/

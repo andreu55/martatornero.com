@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome
+# title: Welcome
 locale: en
 permalink: /en/
 altlang: /

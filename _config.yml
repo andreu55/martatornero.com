@@ -2,9 +2,10 @@ title: Marta Tornero
 description: Escritora, investigadora y comunicadora sobre colapso, comunidad y cuidado. 
 url: "https://martatornero.com"  # sin / al final
 baseurl: "" # déjalo vacío si está en el root del dominio
-locale: es_ES
-timezone: Europe/Madrid # Si descomentamos esto hay que activar gem 'tzinfo-data'
 lang: es
+
+locale: es_ES
+timezone: Europe/Madrid # Necesita la gem 'tzinfo-data'
 
 favicon: 'assets/favicon.ico'
 
