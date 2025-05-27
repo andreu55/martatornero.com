@@ -1,0 +1,25 @@
+en:
+  - name: "Home"
+    url: "/"
+  - name: "Therapy with me"
+    url: "/therapy-with-me/"
+  - name: "Contact"
+    url: "/contact/"
+  - name: "Blog"
+    url: "/blog/es/"
+  # - name: "External ↗"
+  #   url: "https://ejemplo.com"
+  #   external: true
+
+es:
+  - name: "Inicio"
+    url: "/"
+  - name: "Terapia conmigo"
+    url: "/terapia-conmigo/"
+  - name: "Contacto"
+    url: "/contacto/"
+  - name: "Blog"
+    url: "/blog/en/"
+  # - name: "Externo ↗"
+  #   url: "https://ejemplo.com"
+  #   external: true

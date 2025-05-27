@@ -6,5 +6,5 @@ permalink: /contacto/
 altlang: /contact/
 ---
 
-<h1>Contacto</h1>
-<p>¿Quieres decirme algo bonito, colaborar o lanzarme un hechizo amable? Puedes escribirme a <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>.</p>
+## {{ page.title }}
+Si tienes alguna duda o quieres que nos conozcamos para saber si podemos trabajar juntos/as escríbeme a [hola@martatornero.com](mailto:hola@martatornero.com).

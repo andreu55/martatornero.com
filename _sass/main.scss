@@ -30,6 +30,10 @@ a:hover {
     text-decoration: underline;
 }
 
+del {
+    text-decoration-color: $link;
+}
+
 .sidebar {
     margin-top: 2em;
     grid-column: 2 / 3; // Coloca la barra lateral en la segunda columna del grid
@@ -125,6 +129,22 @@ blockquote {
 	padding-left: $indentation;
 }
 
+// blockquote {
+//     border-left: 1px solid #d16ba5;
+//     // background-color: #fceffc;
+//     // background-color: #f8e6f0;
+//     // background-color: #f9d6cc;
+//     background-color: #ffe6e0;
+//     padding: 1em 1.5em;
+//     margin-left: 1rem;
+//     font-style: italic;
+//     color: #333;
+// }
+
+// blockquote p {
+//     margin-bottom: 0;
+// }
+
 // Tables
 table {
 	border-collapse: collapse;
@@ -163,13 +183,13 @@ hr {
 
 // --- Acordeon ---
 .acordeon-container {
-    max-width: 700px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    // max-width: 700px;
+    // margin: 2rem auto;
+    padding: 0 0.2rem 0 0;
   }
   
   .acordeon-item {
-    border-bottom: 1px solid #ddd;
+    border-bottom: $border; // 1px solid #ddd;
     margin-bottom: 1rem;
   }
   

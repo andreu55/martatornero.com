@@ -2,6 +2,8 @@ title: Marta Tornero
 description: Escritora, investigadora y comunicadora sobre colapso, comunidad y cuidado. 
 url: "https://martatornero.com"  # sin / al final
 baseurl: "" # déjalo vacío si está en el root del dominio
+permalink: "/:title/"
+logo: 'assets/images/logo.png'
 lang: es
 
 locale: es_ES

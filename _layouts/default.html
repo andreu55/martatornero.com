@@ -17,25 +17,22 @@
 		<div class="container">
 			<nav class="site-nav" id="menu">
 			<ul>
-				{% if page.locale == 'en' %}
-					<li><a href="{{ '/en/' | relative_url }}">Home</a></li>
-					<li><a href="{{ '/about/' | relative_url }}">About</a></li>
-					<li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
-					<li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
-				{% else %}
-					<li><a href="{{ '/' | relative_url }}">Inicio</a></li>
-					<li><a href="{{ '/sobre-mi/' | relative_url }}">Sobre mí</a></li>
-					<li><a href="{{ '/contacto/' | relative_url }}">Contacto</a></li>
-					<li><a href="{{ '/faq/' | relative_url }}">FAQ</a></li>
-				{% endif %}
+				<!-- Recorremos un array de objetos segun el idioma de la pagina -->
+				{% assign nav_items = site.data.navigation[page.locale] %}
+				{% for item in nav_items %}
+					<li>
+						<a href="{{ item.url | relative_url }}"
+						   {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+						   {{ item.name }}
+						</a>
+					</li>
+				{% endfor %}
 
 				{% if page.altlang %}
 				<li class="solo-movil">
 					{% include link-idioma.html %}
 				</li>
 				{% endif %}
-
-				<li><a href="https://ejemplo.com" target="_blank" rel="noopener noreferrer">Externo ↗</a></li>
 			</ul>
 			</nav>
 		</div>
