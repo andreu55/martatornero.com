@@ -1,7 +1,9 @@
 title: Marta Tornero
 description: Escritora, investigadora y comunicadora sobre colapso, comunidad y cuidado. 
-url: "https://andreu55.github.io/martatornero.com/"  # sin / al final
-baseurl: "" # déjalo vacío si está en el root del dominio
+# url: "https://martatornero.com"  # sin / al final
+# baseurl: "" # déjalo vacío si está en el root del dominio
+url: "https://andreu55.github.io"
+baseurl: "/martatornero.com"
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 lang: es
