@@ -18,8 +18,7 @@ Ese **Ser** está en todos nosotros, siempre. Nunca ha sufrido daño, nunca se h
 
 En terapia te acompaño a identificar y despejar los velos que ocultan tu **Ser**, las nubes que cubren el sol, y a activar su poder para sanar la relación con tus **Partes**.
 
-<!-- ![Descripción de la foto](assets/images/tu-foto-1.jpg) -->
-[Foto 1 - Reemplazar]
+![Photo description](/assets/images/your-photo-1.jpg)
 
 ### ¿Partes? Sí, Partes.
 
@@ -31,8 +30,7 @@ Y al liberarlas se produce la magia. Los niños heridos recuperan su vitalidad. 
 
 Increíble pero cierto. Lo he visto suficientes veces como para creer con todo mi corazón que cualquier persona puede sanar.
 
-<!-- ![Descripción de la foto](assets/images/tu-foto-2.jpg) -->
-[Foto 2 - Reemplazar]
+![Photo description](/assets/images/your-photo-2.jpg)
 
 **Sanarse a sí misma.** Como terapeuta, no te diré qué hacer, qué pensar ni cómo relacionarte con tu mundo interior. Eso solo lo sabes *tú*.
 
@@ -44,15 +42,13 @@ Mis herramientas son Internal Family Systems, la imaginación activa jungiana y 
 
 Te propongo un profundo trabajo personal y espiritual. Una transformación de tu relación contigo/a mismo/a que pasa por abrazar todas tus **Partes**, incluso y especialmente las más difíciles.
 
-<!-- ![Descripción de la foto](assets/images/tu-foto-3.jpg) -->
-[Foto 3 - Reemplazar]
+![Photo description](/assets/images/your-photo-3.jpg)
 
 Saber cuáles son tus patrones dañinos está muy bien, pero si de verdad buscas cambiarlos de forma integral y duradera, necesitas amar *todo* lo que hay en ti. Es paradójico, lo sé, pero cuando lo experimentes tendrá mucho sentido.
 
 El objetivo final es que te coloques a ti mismo/a, tu **Ser**, en el centro de tu sistema, liderando con compasión y efectividad a tus **Partes**. Tus **Partes** sanadas confiarán más en ti y los disparadores habituales las activarán menos, pero cuando lo hagan y salte el enfado, frustración, tristeza… estarás tú para abrazarte internamente y recuperar la paz interior.
 
-<!-- ![Descripción de la foto](assets/images/tu-foto-4.jpg) -->
-[Foto 4 - Reemplazar]
+![Photo description](/assets/images/your-photo-4.jpg)
 
 Debes saber que este trabajo no ofrece soluciones inmediatas. Requiere tiempo, compromiso y honestidad contigo/a mismo/a. Lo que te ofrezco es una manera radicalmente diferente a cómo nos han enseñado a relacionarnos, una manera que abraza en lugar de rechazar, que comprende en lugar de juzgar, que integra en lugar de segregar. Una manera regenerativa.
 
@@ -60,8 +56,7 @@ Será un honor para mí acompañarte en el viaje de regreso a ti mismo/a.
 
 Escríbeme a [hola@martatornero.com](mailto:hola@martatornero.com) para concertar una primera cita gratuita de 20 minutos para conocernos y ver si hacemos match.
 
-<!-- ![Descripción de la foto](assets/images/tu-foto-5.jpg) -->
-[Foto 5 - Reemplazar]
+![Photo description](/assets/images/your-photo-5.jpg)
 
 ### Algunas preguntas prácticas
 

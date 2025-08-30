@@ -18,8 +18,7 @@ That **Self** is in all of us, always. It has never been harmed, it has never le
 
 In therapy, I accompany you to identify and clear the veils that hide your **Self**, the clouds that cover the sun, and to activate its power to heal the relationship with your **Parts**.
 
-<!-- ![Photo description](assets/images/your-photo-1.jpg) -->
-[Photo 1 - Replace]
+![A serene figure sits in a warm, sunlit therapy space, embodying the calm and compassionate presence of the Self, with gentle shadows representing the integration of different inner Parts](/assets/images/your-photo-1.jpg)
 
 ### Parts? Yes, Parts.
 
@@ -31,8 +30,7 @@ And when they are released, magic happens. Wounded children regain their vitalit
 
 Incredible but true. I've seen it enough times to believe with all my heart that anyone can heal.
 
-<!-- ![Photo description](assets/images/your-photo-2.jpg) -->
-[Photo 2 - Replace]
+![Photo description](/assets/images/your-photo-2.jpg)
 
 **Healing oneself.** As a therapist, I won't tell you what to do, what to think, or how to relate to your inner world. Only *you* know that.
 
@@ -44,15 +42,13 @@ My tools are Internal Family Systems, Jungian active imagination, and energy pra
 
 I propose a profound personal and spiritual work. A transformation of your relationship with yourself that involves embracing all your **Parts**, even and especially the most difficult ones.
 
-<!-- ![Photo description](assets/images/your-photo-3.jpg) -->
-[Photo 3 - Replace]
+![Photo description](/assets/images/your-photo-3.jpg)
 
 Knowing your harmful patterns is very good, but if you truly seek to change them in an integral and lasting way, you need to love *everything* within you. It's paradoxical, I know, but when you experience it, it will make a lot of sense.
 
 The ultimate goal is for you to place yourself, your **Self**, at the center of your system, leading your **Parts** with compassion and effectiveness. Your healed **Parts** will trust you more, and usual triggers will activate them less, but when they do and anger, frustration, or sadness arise... you will be there to embrace yourself internally and regain inner peace.
 
-<!-- ![Photo description](assets/images/your-photo-4.jpg) -->
-[Photo 4 - Replace]
+![Photo description](/assets/images/your-photo-4.jpg)
 
 You should know that this work does not offer immediate solutions. It requires time, commitment, and honesty with yourself. What I offer is a radically different way of relating than we've been taught, a way that embraces instead of rejects, that understands instead of judges, that integrates instead of segregates. A regenerative way.
 
@@ -60,8 +56,7 @@ It will be an honor for me to accompany you on the journey back to yourself.
 
 Write to me at [hola@martatornero.com](mailto:hola@martatornero.com) to schedule a free 20-minute initial consultation to get to know each other and see if we're a match.
 
-<!-- ![Photo description](assets/images/your-photo-5.jpg) -->
-[Photo 5 - Replace]
+![Photo description](/assets/images/your-photo-5.jpg)
 
 ### Some practical questions
 
